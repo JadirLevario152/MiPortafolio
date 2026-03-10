@@ -3,12 +3,28 @@
 // ============================================
 const projects = [
     {
-        title: "Task Manager App",
-        description: "Aplicación para gestionar tareas diarias con localStorage y diseño responsive.",
-        technologies: ["HTML", "CSS", "JavaScript", "LocalStorage"],
+        title: "TaskFlow - Gestión de Tareas",
+        description: "Aplicación full stack para gestión de tareas tipo Trello/Asana con autenticación, tableros y tareas.",
+        technologies: ["React", "Node.js", "Express", "PostgreSQL", "JWT", "Bcrypt", "Axios", "CSS3", "HTML5"],
         image: "assets/taskflow.png",
         liveUrl: "https://jadirlevario152.github.io/taskflow/",
         codeUrl: "https://github.com/JadirLevario152/taskflow"
+    },
+    {
+        title: "E-commerce Plant Mini",
+        description: "Tienda online de plantas con carrito de compras, categorías y diseño responsive.",
+        technologies: ["HTML5", "CSS3", "JavaScript (ES6+)", "React", "React Router", "Context API", "CSS Modules"],
+        image: "assets/E-commerce.png",
+        liveUrl: "https://jadirlevario152.github.io/e-plantShoppingMyProyect/",
+        codeUrl: "https://github.com/JadirLevario152/e-plantShoppingMyProyect"
+    },
+    {
+        title: "TravelBloom Recommendation",
+        description: "Aplicación para buscar y descubrir destinos de viaje con recomendaciones personalizadas.",
+        technologies: ["HTML5", "CSS3", "JavaScript", "API", "Fetch", "Responsive Design"],
+        image: "assets/travelBloom.png",
+        liveUrl: "https://jadirlevario152.github.io/travelRecommendation/index.html",
+        codeUrl: "https://github.com/JadirLevario152/travelRecommendation"
     },
     {
         title: "Clima App",
@@ -20,19 +36,11 @@ const projects = [
     },
     {
         title: "Buscador de Películas",
-        description: "Busca información de películas consumiendo la API de OMDB.",
+        description: "Busca información de películas consumiendo la API de OMDB.git ",
         technologies: ["React", "API", "Hooks", "Axios"],
         image: "🎬",
         liveUrl: "https://tu-demo.com/peliculas",
         codeUrl: "https://github.com/tu-usuario/movie-search"
-    },
-    {
-        title: "E-commerce Plant Mini",
-        description: "Tienda online de plantas con carrito de compras.",
-        technologies: ["React", "CSS Modules", "ContextAPI", "JavaScript"],
-        image: "assets/E-commerce.png",
-        liveUrl: "https://jadirlevario152.github.io/e-plantShoppingMyProyect/",
-        codeUrl: "https://github.com/JadirLevario152/e-plantShoppingMyProyect"
     },
     {
         title: "Dashboard Analytics",
