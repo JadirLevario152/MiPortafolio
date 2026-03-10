@@ -6,7 +6,7 @@ const projects = [
         title: "Task Manager App",
         description: "Aplicación para gestionar tareas diarias con localStorage y diseño responsive.",
         technologies: ["HTML", "CSS", "JavaScript", "LocalStorage"],
-        image: "📋",
+        image: "assets/taskflow.png",
         liveUrl: "https://jadirlevario152.github.io/taskflow/",
         codeUrl: "https://github.com/JadirLevario152/taskflow"
     },
@@ -14,7 +14,7 @@ const projects = [
         title: "Clima App",
         description: "App del clima usando API de OpenWeatherMap. Muestra temperatura y condiciones actuales.",
         technologies: ["JavaScript", "API", "Fetch", "CSS"],
-        image: "🌤️",
+        image: "🔥",
         liveUrl: "https://tu-demo.com/clima",
         codeUrl: "https://github.com/tu-usuario/clima-app"
     },
@@ -29,8 +29,8 @@ const projects = [
     {
         title: "E-commerce Plant Mini",
         description: "Tienda online de plantas con carrito de compras.",
-        technologies: ["React", "Context API", "CSS Modules"],
-        image: "🛒",
+        technologies: ["React", "CSS Modules", "ContextAPI", "JavaScript"],
+        image: "assets/E-commerce.png",
         liveUrl: "https://jadirlevario152.github.io/e-plantShoppingMyProyect/",
         codeUrl: "https://github.com/JadirLevario152/e-plantShoppingMyProyect"
     },
@@ -133,29 +133,31 @@ function renderProjects() {
     if (!container) return;
     
     container.innerHTML = projects.map(project => `
-        <div class="project-card">
-            <div class="project-image">
-                ${project.image}
+    <div class="project-card">
+        <div class="project-image">
+            ${project.image.startsWith('assets') || project.image.startsWith('http') 
+                ? `<img src="${project.image}" alt="${project.title}">` 
+                : project.image}
+        </div>
+        <div class="project-info">
+            <h3>${project.title}</h3>
+            <p>${project.description}</p>
+            <div class="project-tech">
+                ${project.technologies.map(tech => 
+                    `<span class="tech-tag">${tech}</span>`
+                ).join('')}
             </div>
-            <div class="project-info">
-                <h3>${project.title}</h3>
-                <p>${project.description}</p>
-                <div class="project-tech">
-                    ${project.technologies.map(tech => 
-                        `<span class="tech-tag">${tech}</span>`
-                    ).join('')}
-                </div>
-                <div class="project-links">
-                    <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer">
-                        <span>🔗</span> Demo
-                    </a>
-                    <a href="${project.codeUrl}" target="_blank" rel="noopener noreferrer">
-                        <span>💻</span> Código
-                    </a>
-                </div>
+            <div class="project-links">
+                <a href="${project.liveUrl}" target="_blank" rel="noopener noreferrer">
+                    <span>🔗</span> Demo
+                </a>
+                <a href="${project.codeUrl}" target="_blank" rel="noopener noreferrer">
+                    <span>💻</span> Código
+                </a>
             </div>
         </div>
-    `).join('');
+    </div>
+`).join('');
 }
 
 // ============================================

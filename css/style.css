@@ -348,6 +348,10 @@ section {
     box-shadow: var(--shadow-2xl);
 }
 
+.project-card:hover .project-image img {
+    transform: scale(1.1);
+}
+
 .project-image {
     width: 100%;
     height: 250px;
@@ -357,6 +361,14 @@ section {
     justify-content: center;
     color: white;
     font-size: 3rem;
+    overflow: hidden;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Hace que la imagen cubra todo el espacio sin deformarse */
+    transition: transform 0.5s;
 }
 
 .project-info {
