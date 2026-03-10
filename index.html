@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Jadir Levario</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- EmailJS Library -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Jadir Alexis Levario Ojeda</h1>
+        <p>Desarrollador JavaScript Junior</p>
+        <nav>
+            <a href="#about" class="nav-btn">Sobre Mí</a>
+            <a href="#technologies" class="nav-btn">Tecnologías</a>
+            <a href="#projects" class="nav-btn">Proyectos</a>
+            <a href="#contact" class="nav-btn">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2 class="section-title">Sobre Mí</h2>
+        
+        <div class="about-main">
+            <div class="about-text">
+                <p>¡Hola! Mi nombre es Jadir y soy Ingeniero en Sistemas Computacionales en Hardware, me apasiona demasiado la programación y desarrollo web. Me encanta JavaScript y a su vez la creación de experiencias digitales para que las personas puedan usarlas. Quiero transformar mis ideas en aplicaciones web funcionales y atractivas.</p>
+                
+                <p>Mi objetivo es seguir aprendiendo y creciendo en el mundo del desarrollo web, creando proyectos que resuelvan problemas reales y mejoren la vida de las personas.</p>
+            </div>
+            
+            <div class="gif-container">
+                <img 
+                    src="https://programacionparatodossite.wordpress.com/wp-content/uploads/2016/03/image.gif" 
+                    alt="Programador trabajando en código"
+                    loading="lazy"
+                >
+            </div>
+        </div>
+    </section>
+
+    <section id="technologies">
+        <h2 class="section-title">Tecnologías</h2>
+        <div class="tech-showcase">
+            <div class="tech-grid">
+                <!-- HTML5 -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                    </div>
+                    <span>HTML5</span>
+                </div>
+                
+                <!-- CSS3 -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                    </div>
+                    <span>CSS3</span>
+                </div>
+                
+                <!-- JavaScript -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                    </div>
+                    <span>JavaScript</span>
+                </div>
+                
+                <!-- React -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                    </div>
+                    <span>React</span>
+                </div>
+                
+                <!-- Node.js -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                    </div>
+                    <span>Node.js</span>
+                </div>
+                
+                <!-- Git -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                    </div>
+                    <span>Git</span>
+                </div>
+                
+                <!-- GitHub -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                    </div>
+                    <span>GitHub</span>
+                </div>
+                
+                <!-- Python -->
+                <div class="tech-card">
+                    <div class="tech-icon">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                    </div>
+                    <span>Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="section-title">Mis Proyectos</h2>
+        <div class="projects-grid" id="projects-container"></div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Contacto</h2>
+        <form class="contact-form" id="contact-form">
+            <div class="form-group">
+                <label for="name">Tu Nombre</label>
+                <input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    placeholder="Ej: Juan Pérez"
+                    required
+                >
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Tu Email</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Ej: juan@email.com"
+                    required
+                >
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Tu Mensaje</label>
+                <textarea 
+                    id="message" 
+                    name="message" 
+                    placeholder="Escribe tu mensaje aquí..."
+                    required
+                ></textarea>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn-submit" id="submitBtn">
+                    <span>Enviar Mensaje</span>
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/JadirLevario152" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/jadir-alexis-levario-ojeda/" target="_blank">LinkedIn</a>
+            <a href="https://outlook.live.com/mail/0/deeplink/compose?to=jadirlevarioo@outlook.es" target="_blank">Email</a>
+        </div>
+        <p>&copy; 2026. Jadir Alexis Levario Ojeda</p>
+    </footer>
+
+    <!-- Botón Volver Arriba -->
+    <button class="scroll-to-top" id="scrollToTop" aria-label="Volver arriba">
+        <span class="arrow">↑</span>
+    </button>
+
+    <!-- Botón de Modo Oscuro/Claro -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Cambiar modo">
+        <span class="theme-icon">🌙</span>
+        <span class="theme-text">Modo Oscuro</span>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
