@@ -28,11 +28,11 @@ const projects = [
     },
     {
         title: "Clima App",
-        description: "App del clima usando API de OpenWeatherMap. Muestra temperatura y condiciones actuales.",
-        technologies: ["JavaScript", "API", "Fetch", "CSS"],
-        image: "🔥",
-        liveUrl: "https://tu-demo.com/clima",
-        codeUrl: "https://github.com/tu-usuario/clima-app"
+        description: "Aplicación del clima con OpenWeatherMap API, búsqueda por ciudad y país.",
+        technologies: ["HTML5", "CSS3", "JavaScript", "API", "Fetch", "OpenWeatherMap"],
+        image: "assets/climaApp.png",
+        liveUrl: "https://jadirlevario152.github.io/climaApp/",
+        codeUrl: "https://github.com/JadirLevario152/climaApp"
     },
     {
         title: "Buscador de Películas",
